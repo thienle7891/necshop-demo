@@ -1,0 +1,157 @@
+
+.slideSale {
+    width: 100%;
+    transition: left 0s .75s;
+    position: relative;
+    padding-top: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.slideSale:hover .controls {
+    opacity: 1;
+}
+.slide {
+    width: 300%;
+    transition: left 0s .75s;
+    height : 100%; 
+    position: absolute;
+    display: flex;
+    /* padding-top: 50%; */
+    flex-direction: row;
+    top: 0;
+    left: 0;
+}
+@keyframes faceIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes faceOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+.slide1{
+    width: 100%;
+    transition: left 0s .75s;
+    /* padding-top: 50%; */
+    /* height: 100%; */
+    display: flex;
+    background: url('/src/assets/ImageHome/slide1-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+.slide2{
+    width: 100%;
+    transition: left 0s .75s;
+    display: flex;
+    position: relative;
+    /* padding-top: 50% ; */
+
+    background: url('/src/assets/ImageHome/slide2-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.slide3{
+    width: 100%;
+    position: relative;
+    /* padding-top: 50% ; */
+    
+    transition: left 0s .75s;
+    display: flex;
+    background: url('/src/assets/ImageHome/slide3-1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    z-index: 20;
+}
+.left {
+    background-color: rgb(37, 37 ,37);
+    padding: 20px;
+    color: #fff;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+
+}
+.right {
+    background-color: rgb(37, 37 ,37);
+    color: #fff;
+    padding: 20px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+}
+.right:hover, .left:hover {
+    cursor: pointer;
+    background-color: rgba(217, 106, 119, 0.5)
+
+}
+
+.sale {
+    display: none;
+    font-size: 180px;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    /* margin: auto; */
+    top: 45%;
+    left: 42%;
+    z-index: 1;
+    animation: sale ease-in-out 0.8s;
+}
+.sale30 {
+    display: flex;
+    font-size: 64px;
+    font-weight: 700;
+    color: rgb(217, 106, 119);
+    position: absolute;
+    /* margin: auto; */
+    right: 24px;
+    top: -50px;
+    z-index: 2;
+    /* animation: sale30 ease-in-out 0.8s; */
+
+}
+.sale.showSaleContent {
+    display: block;
+}
+@keyframes sale {
+    from {
+        left: 20%;
+        opacity: 0;
+    }
+    to {
+        left: 42%;
+        opacity: 1;
+    }
+}
+/* @keyframes sale30 {
+    from {
+        right: -250px;
+        opacity: 0;
+    }
+    to {
+        right: 24px;
+        opacity: 1;
+    }
+} */

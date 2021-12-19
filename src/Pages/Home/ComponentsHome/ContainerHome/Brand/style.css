@@ -1,0 +1,74 @@
+
+.brand {
+    width: 100%;
+    position: relative;
+    left: -40%;
+}
+.brandBg {
+    width: 100%;
+    height: 50%;
+    background-image: url('/src/assets/ImageHome/bgbrand.jpg');
+    background-attachment: fixed ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.brandBg img {
+    width: 100%;
+    z-index: 100;
+}
+.brandImage {
+    width: 100%;
+    display: flex;
+    top: 0;
+}
+.brandImage img {
+    width: 120%;
+    margin: auto;
+}
+.brandShow {
+    display: flex;
+    
+}
+.brandContentTitle {
+    display: flex;
+    width: 100%;
+}
+.brandContentTitle h2 {
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+}
+
+.brandContent {
+    margin-top: 60px;
+}
+.imageBrand {
+    width: 100%;
+    height: 100%;
+}
+.imageBrandImage {
+    transform: scale(1);
+    transition: all 0.3s;
+
+}
+.imageBrand:hover .imageBrandImage {
+    cursor: pointer;
+    transform: scale(1.2);
+
+}
+.imageBrand1, .imageBrand0,
+.imageBrand3,
+.imageBrand7, .imageBrand6 {
+    border-right: 1px solid #fff;
+}
+.imageBrand0, .imageBrand1,.imageBrand2 ,
+.imageBrand3,  .imageBrand5 {
+    border-bottom: 1px solid #fff;
+
+}
+.imageBrand4 {
+    background-color: var(--primaryy-color);
+    transform: scale(1.05);
+}

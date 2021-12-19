@@ -1,0 +1,28 @@
+.separator {
+    background: url('/src/assets/ImageHome/icon-box.png') no-repeat scroll center top;
+    margin-bottom: 0;
+    padding-top: 36px;
+    position: relative;
+    text-align: center;
+    
+}
+.lineLeft {
+    background: #e5e5e5 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    margin-right: 15px;
+    position: absolute;
+    right: 50%;
+    top: 6px;
+    width: 160px;
+}
+.lineRight {
+    background: #e5e5e5 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    margin-left: 15px;
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    width: 160px;
+}

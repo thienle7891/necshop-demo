@@ -1,0 +1,30 @@
+.productPage {
+    display: flex;
+}
+.productPageControls {
+    z-index: 10;
+    display: flex;
+    margin: 20px auto;
+}
+.productPageControls span:hover{
+    background-color: var(--primaryy-color)
+}
+.productPageLeft {
+    background-color: rgb(37, 37 ,37);
+    padding: 20px;
+    color: #fff;
+    margin-right: 2px;
+}
+.productPageRight {
+    background-color: rgb(37, 37 ,37);
+    color: #fff;
+    padding: 20px;
+}
+.pageNumber {
+    background-color: rgb(37, 37 ,37);
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    margin-right: 2px;
+
+}

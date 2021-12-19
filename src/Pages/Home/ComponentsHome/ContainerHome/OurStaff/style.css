@@ -1,0 +1,88 @@
+
+
+.ourStaff {
+    margin-top: 20px;
+}
+
+.ourStaffTitle {
+    text-align: center;
+    font-size: 30px;
+}
+.ourStaffList {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.ourStaffRow {
+    width: 200%;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all 0.8s linear ;
+    animation: staffSlide 10s linear 2s infinite 
+}
+
+@keyframes staffSlide {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: -33.33%
+    }
+    50% {
+        left: -66.67%
+    }
+    75% {
+        left: -100%
+    }
+    100% {
+        left: 0;
+    }
+}
+.staffItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.staffImage {
+    width: 100%;
+    display: flex;
+}
+.staffImage img {
+    width: 50%;
+    border-radius: 50%;
+    margin: auto
+    
+}
+.staffItem h3 {
+    text-align: center;
+    font-size: 18px;
+    color: var(--primaryy-color);
+    margin-bottom: 10px
+}
+.staffItem h4 {
+    text-align: center;
+    font-size: 14px;
+    color: #d0d0d0;
+    margin-top: 0;
+}
+.staffItem p {
+    text-align: center;
+    font-size: 12px;
+    color: #a1a1a1;
+    margin-top: 0;
+}
+.ourStaffBtn {
+    display: flex;
+    margin-top: 10px;
+}
+.ourStaffBtn button {
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 24px;
+    background-color: var(--primaryy-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px
+}

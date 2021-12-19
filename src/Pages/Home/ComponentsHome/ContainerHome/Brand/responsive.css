@@ -1,0 +1,24 @@
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .brandContentTitle h2 {
+        font-size: 20px;
+    }
+    .brandContent {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 740px) {
+    .brandContentTitle h2 {
+        font-size: 12px;
+    }
+    .colFake {
+        display: none;
+    }
+    .brandContent {
+        margin-top: 20px;
+    }
+}

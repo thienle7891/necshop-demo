@@ -1,0 +1,123 @@
+
+
+.categoryList {
+    margin:auto
+}
+.categoryItem {
+    position: relative;
+    margin-top: 24px;
+    padding-left: 50px;
+}
+.item {
+    display: flex;
+    position: relative;
+}
+
+.image {
+    display: flex;
+    /* border: 1px dashed rgb(59, 59, 59) ; */
+    height: 100px;
+    width: 100px;
+    position: relative;
+    border-radius: 50%;
+
+}
+.image img {
+    margin: auto
+}
+.contents {
+    /* align-items: center */
+}
+.contents h3 {
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: 20px
+}
+.contents p {
+    margin-left: 24px;
+    font-size: 12px;
+
+}
+.borderCategory {
+    position: absolute;
+    width: 130px; 
+    height: 102px;
+    border-top: 1px dashed rgb(59, 59, 59);
+    border-bottom: 1px dashed rgb(59, 59, 59);
+    left: 100px;
+    animation: borderItem ease-in-out 0.5s;
+    display: none
+}
+.borderCategory::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed rgb(59, 59, 59);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: -1px;
+    border-right: none;
+    left: -100px;
+    animation: borderItem ease-in-out 0.4s 
+}
+.borderCategory::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: 1px dashed rgb(59, 59, 59);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -1px;
+    border-left: none;
+    right: -80px;
+    animation: borderItem ease-in-out 0.4s
+}
+
+.borderImage {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed rgb(59, 59, 59);
+    border-radius: 50%;
+    transform-origin: 50% 50%;
+    transform: scale(1) translateX(0);
+    /* animation: borderImage 0.5s ease-in  ; */
+    transition: all 0.5s ease-in-out 0s;
+
+    display: block;
+}
+@keyframes borderImage {
+    from { 
+        transform: scale(0);
+        opacity: 1
+    }
+    to { 
+        transform: scale(1);
+        opacity: 0
+
+    }
+}
+@keyframes borderItem {
+    from { 
+        transform: scale(0);
+        opacity: 0
+    }
+    to { 
+        transform: scale(1);
+        opacity: 1
+
+    }
+}
+.item:hover .borderCategory {
+    cursor: pointer;
+    display: block;
+    /* transform: scale(0) */
+}
+.item:hover .borderImage {
+    transition: all 0.4s ease-in-out 0s;
+    transform: scale(0) translateX(250px);
+    opacity: 0; 
+}

@@ -1,0 +1,40 @@
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .controls {
+        opacity: 1;
+
+    }
+    .left, .right {
+        padding: 16px;
+    }
+    .sale {
+        font-size: 100px;
+    }
+    .sale30 {
+        font-size: 30px;
+        top: -30px;
+    }
+    
+
+}
+
+@media (max-width: 740px) {
+    .controls {
+        opacity: 1;
+    }
+    .left, .right {
+        padding: 10px;
+    }
+    .sale {
+        font-size: 60px;
+    }
+    .sale30 {
+        font-size: 14px;
+        top: -18px;
+        right: 12px;
+        
+    }
+}

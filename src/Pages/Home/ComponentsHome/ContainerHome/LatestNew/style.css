@@ -1,0 +1,151 @@
+
+.col {
+    padding: 0;
+}
+.latestNew {
+    margin-top:  20px;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
+    width: 100%;
+}
+.latestNew h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top:0
+}
+.latestNewList {
+    display: flex;
+    width: 100%;
+}
+.latestNewItem {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.latestNewItem1, .latestNewItem3
+,.latestNewItem4, .latestNewItem5 {
+    width: 25%;
+}
+.latestNewItem2, .latestNewItem6 {
+    width: 50%;
+    position: relative;
+
+}
+.latestImage1, .latestImage3
+,.latestImage4, .latestImage5 {
+    position: relative;
+}
+.latestImage0 img, .latestImage1 img, .latestImage3 img
+,.latestImage4 img, .latestImage5 img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+}
+.latestImage2, .latestImage6{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.latestImage2 img, .latestImage6 img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.25s ease-in-out;
+
+}
+.latestNewBlock {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    margin: 15px;
+    display: flex;
+    opacity: 0;
+    transition: all 0.25s ease-in
+    
+}
+.latestNewBorder {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.25s ease-out 0s;
+    z-index: 10;
+    /* display: none; */
+}
+.latestNewBorder::before {
+    animation: showBorder 0.5s ease-in-out;
+    content: '';
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    margin: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease-out 0s;
+    display: none;
+}
+
+@keyframes showBorder {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+
+.latestNewItem:hover .latestNewBlock{
+    opacity: 1;
+}
+.latestNewItem:hover .latestNewBorder::before{
+    display: block;
+}
+.latestNewItem:hover .latestNewBorder {
+    background-color: rgba(0, 0, 0, 0.3)
+
+}
+.latestNewItem:hover .latestImage img{
+    transform: scale(1.1);
+}
+
+
+.latestNewContent {
+    margin: auto;
+    z-index: 12;
+}
+.latestNewContent h2{
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+}
+.latestNewContent div{
+    display: flex;
+    margin: auto;
+}
+.latestNewContent span{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-right: 24px;
+    font-size: 14px;
+    
+    
+}
+.latestNewContent h4 {
+    font-weight: 400;
+    margin-left: 6px;
+    
+}
+.latestNewContent button {
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 3px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    margin: 10px auto
+}

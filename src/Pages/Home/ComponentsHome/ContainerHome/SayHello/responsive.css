@@ -1,0 +1,24 @@
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+ 
+    .sayHello {
+        margin-top: 240px
+    }
+    .sayHelloTitle {
+        font-size: 34px
+    }
+
+}
+
+@media (max-width: 740px) {
+    .sayHello {
+        margin-top: 170px
+    }
+    .sayHelloTitle {
+        font-size: 28px
+    }
+}

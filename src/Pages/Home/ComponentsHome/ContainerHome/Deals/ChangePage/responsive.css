@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .changePageControls span {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 740px) {
+    
+    .changePageControls span {
+        display: none;
+    }
+}
