@@ -1,0 +1,55 @@
+.footer {
+    background-color: rgb(10, 9, 7)
+}
+.footerItem {
+    padding: 12px
+}
+.footerItem h2{
+    color: #fff
+}
+.footerItem h3{
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s linear;
+}
+.footerItem h3:hover {
+    color: var(--primaryy-color);
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+.footerItem h4{
+    color: var(--primaryy-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+.footerItem h4:hover {
+    color: rgb(204, 204, 204);
+    cursor: pointer;
+
+}
+.footerItem p{
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    
+}
+.footerItem h5{
+    font-size: 14px;
+    margin: 6px;
+    font-weight: 500;
+
+}
+.footerItem i{
+    font-size: 20px;
+    margin-right: 6px;
+}
+.footerItem span{
+    color: rgb(204, 204, 204)
+}
+.footerItem div{
+    display: flex;
+    align-items: center;
+    color: rgb(204, 204, 204);
+
+}

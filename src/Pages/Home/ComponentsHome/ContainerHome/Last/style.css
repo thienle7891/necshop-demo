@@ -1,0 +1,64 @@
+
+
+.lastContainer {
+    background: url('/src/assets/ImageHome/bgtest.jpg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    margin-top: 40px;
+
+}
+
+.lastContainerBlock {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
+
+}
+
+.lastContainerContent {
+    margin: auto;
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.lastContainerContent h3{
+    font-size: 24px;
+    text-align: center;
+    color: var(--primaryy-color)
+}
+.lastContainerContent p{
+    font-size: 14px;
+    text-align: center;
+    color: #fff
+}
+
+.lastContainerContentRow {
+    width: 300%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0;
+    transition: left 0.3s ease-in-out;
+}
+.lastContainerContentTitle {
+    width: 100%;
+}
+
+.lastContainerAvatart {
+    display: flex;
+}
+.lastContainerAvatart span {
+    margin: auto;
+}
+.lastContainerAvatart img {
+    width: 40px;
+    height: 40px;
+    margin: 12px;
+    border-radius: 50%;
+}
+.lastContainerAvatart img.showBorder {
+    border: 2px solid var(--primaryy-color);
+}
